@@ -16,7 +16,6 @@ import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.RepositoryService;
 import org.activiti.spring.boot.actuate.endpoint.ProcessEngineEndpoint;
 import org.activiti.spring.boot.actuate.endpoint.ProcessEngineMvcEndpoint;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -28,7 +27,6 @@ import org.springframework.context.annotation.Configuration;
  * @author Josh Long
  */
 @Configuration
-@ConditionalOnClass (name = "org.springframework.boot.actuate.endpoint.AbstractEndpoint")
 public class EndpointAutoConfiguration {
 
     @Bean
